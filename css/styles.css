@@ -1,151 +1,96 @@
-/* Reset */
+/* Global Reset & Base Styles */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Base Colors and Fonts */
-:root {
-  --bg: #fdfdff;
-  --card-bg: #ffffff;
-  --primary: #a3c9f9;
-  --accent: #dbeeff;
-  --text: #333;
-  --heading: #2b4c7e;
-  --shadow: rgba(173, 216, 230, 0.4);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  padding: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0b0f1a;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
 }
 
 /* Header */
 header {
-  background: linear-gradient(90deg, var(--primary), #d2e5fa);
-  color: #ffffff;
-  padding: 2rem 1rem;
-  text-align: center;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 12px var(--shadow);
+    background: linear-gradient(to right, #00ffc3, #00aaff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ffc3;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 header h1 {
-  font-size: 2.4rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 0.5rem;
+    font-size: 2em;
+    color: #0b0f1a;
 }
 
 header p {
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-  font-weight: 300;
+    color: #0b0f1a;
+    font-size: 1.2em;
 }
 
 /* Section Styling */
-main {
-  margin-top: 2rem;
-}
-
 section {
-  background-color: var(--card-bg);
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 6px 18px var(--shadow);
-  margin-bottom: 2rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #12172b;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 2px solid #00ffc3;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00aaff88;
+    transition: transform 0.3s ease;
 }
 
 section:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px var(--shadow);
+    transform: scale(1.02);
 }
 
-/* Section Titles */
 h2 {
-  font-size: 2rem;
-  color: var(--heading);
-  margin-bottom: 1rem;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.5rem;
+    color: #00ffc3;
+    margin-bottom: 10px;
+    font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.4rem;
-  color: var(--heading);
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+    color: #aaffff;
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
 
-/* Paragraph Styling */
-p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  color: var(--text);
-}
-
-/* List Styling */
 ul {
-  list-style-type: none;
-  padding-left: 0;
+    list-style-type: square;
+    padding-left: 20px;
 }
 
-ul li {
-  background-color: var(--accent);
-  border-radius: 5px;
-  margin-bottom: 0.8rem;
-  padding: 0.8rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-ul li strong {
-  font-weight: 600;
+li {
+    margin-bottom: 10px;
 }
 
 /* Links */
 a {
-  color: var(--primary);
-  text-decoration: none;
-  transition: all 0.3s ease;
+    color: #00ffc3;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    color: #ffffff;
+    text-shadow: 0 0 5px #00ffc3;
+}
+
+/* Tip text */
+p strong {
+    color: #ffdd57;
 }
 
 /* Footer */
 footer {
-  background-color: var(--primary);
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  margin-top: 2rem;
-  box-shadow: 0 4px 12px var(--shadow);
-}
-
-footer p {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  body {
-    padding: 1rem;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  section {
-    padding: 1.5rem;
-  }
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+    margin-top: 30px;
+    color: #cccccc;
+    border-top: 1px solid #333;
 }
